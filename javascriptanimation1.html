@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title></title>
+
+<style type="text/css">
+	
+body{
+background-color: lightpink;
+}
+
+
+#ball{
+	height: 100px;
+	width: 100px;
+	background-image: url(https://i.pinimg.com/originals/66/99/ee/6699ee4da4fc51441ec560fad9c4a922.gif);
+	background-size: contain;
+	position: absolute;
+	left: 10px;
+	top: 50px;
+}
+
+	</style>
+</head>
+<body>
+
+	<a href="projects.html">
+
+click here to go back and see other projects
+
+
+	<div id="ball"></div>
+<br> 
+
+<script type="text/javascript">
+	
+document.addEventListener("click", function makeDiv(event){
+
+console.log(event.clientX,event.clientY);
+
+ball.style.left = event.clientX - 50 + "px";
+ball.style.top = event.clientY - 50 + "px";
+
+ball.style.backgroundImage = "url(https://i.pinimg.com/originals/bb/f3/70/bbf370413bfcef32dd59242cb092cad5.gif)";
+
+})
+
+
+
+</script>
+
+
+</body>
+</html>
