@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+
+	<title></title>
+</head>
+<body>
+
+<center>
+	<div id="square"></div>
+
+</center>
+	<script type="text/javascript">
+	
+		
+		var breakfast = ["pancakes", "waffles", "coffee", "bacon", "cereal","turkey bacon", "french toast", "eggs"]
+
+document.addEventListener("click", 
+	function(){
+
+
+		var random = Math.round(Math.random()*7)
+		console.log(random)
+		square.innerText = breakfast[random]
+
+})
+</script>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title></title>
+<style type="text/css">
+
+body{
+background-color: lightpink;
+}
+	.puppies{
+		width:100px;
+		height:100px;
+		background-size:fill;
+		background-position:fill;
+		background-repeat: no-repeat;
+		border: 1px solid black;
+		display: inline-block;
+		background-image: url(https://t3.ftcdn.net/jpg/02/11/29/16/360_F_211291680_jLhcbWLvwQxJU17IIYReywVmL50jP21z.jpg);
+	}
+
+
+	</style>
+</head>
+<body>
+
+<div id = "puppies"></div>
+
+<script type="text/javascript">
+
+	let counter = 0;
+	
+function makePuppy (){
+	counter = counter + 1
+
+let puppy = document.createElement("div");
+
+	document.body.appendChild(puppy);
+
+	puppy.classList.add("puppies");
+
+	puppy.innerText = counter;
+	
+		}
+
+	setInterval(makePuppy, 100)
+
+</script>
+
+</body>
+
+</html>

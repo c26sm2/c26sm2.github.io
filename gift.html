@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title></title>
+
+<style type="text/css">
+	
+	#plane{
+		width: 300px;
+		height: 300px;
+		background-image: url("https://www.freepnglogos.com/uploads/plane-png/plane-aereo-png-png-foto-8.png");
+		background-size: contain;
+		position: absolute;
+		background-repeat: no-repeat;
+		top: 42%;
+		left: 46%;
+
+	}
+
+	body{
+		background-size: cover;
+		background-image: url("http://cdn.viewing.nyc/assets/media/d02346823127fb129c6fb3634e6c7841/elements/50d97220b6dd5a44af4031076fcf5f47/74ddb8d2-e0a2-47cd-9f51-6f2e91598cec.jpg")
+
+}
+
+.sun{
+    color: deeppink;
+    font-size: xx-large;
+}
+
+</style>
+
+</head>
+<body>
+
+<a href="projects.html">
+
+<p class = "sun">
+ ☀️
+
+<br> 
+
+<div id = "plane"></div>
+
+<audio src="nightsong.mp3" id=nightsong></audio>
+
+<script type="text/javascript">
+	
+let counter = 0;
+
+document.addEventListener("click",
+		function(){
+			counter = counter +1;
+		console.log(counter)
+		console.log(event.clientX, event.clientY)
+				plane.style.left = event.clientX -50 + "px";
+				plane.style.top = event.clientY -50 + "px"; 
+			
+			if(counter%2 == 1){
+				document.body.style.
+					backgroundColor = "hotpink"
+					document.body.style.backgroundImage = "url(https://s3.amazonaws.com/uploads.opalcollection.com/app/uploads/2022/02/10163909/jupbeach-mini.png)"
+					nightsong.play()}
+
+			if(counter%2 == 0){
+				document.body.style.
+					backgroundColor = "lightpink";
+					document.body.style.backgroundImage = "url(http://cdn.viewing.nyc/assets/media/d02346823127fb129c6fb3634e6c7841/elements/50d97220b6dd5a44af4031076fcf5f47/74ddb8d2-e0a2-47cd-9f51-6f2e91598cec.jpg)"
+					nightsong.pause()}
+
+
+		}
+	)
+
+
+</script>
+
+
+</body>
+</html>

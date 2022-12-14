@@ -34,15 +34,26 @@ click here to go back and see other projects
 <br> 
 
 <script type="text/javascript">
-	
+
+var count = 0;
+
 document.addEventListener("click", function makeDiv(event){
 
 console.log(event.clientX,event.clientY);
 
+count =  count + 1
+if (count%2 == 0){ball.style.backgroundImage = "url(https://i.pinimg.com/originals/66/99/ee/6699ee4da4fc51441ec560fad9c4a922.gif)";
+
+
+}
+else{ball.style.backgroundImage = "url(https://cdn130.picsart.com/288851192012211.png?to=crop&type=webp&r=310x310&q=50)"
+
+
+}
+
 ball.style.left = event.clientX - 50 + "px";
 ball.style.top = event.clientY - 50 + "px";
 
-ball.style.backgroundImage = "url(https://i.pinimg.com/originals/66/99/ee/6699ee4da4fc51441ec560fad9c4a922.gif)";
 
 })
 

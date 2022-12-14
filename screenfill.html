@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title></title>
+
+
+<style type="text/css">
+	.Draw{
+		height: 100px;
+		width:	100px;
+		background-image: url(https://www.pngmagic.com/product_images/pink-background-solid.jpg);
+		background-size: contain;
+		background-repeat: no-repeat;
+		position: absolute;
+		
+	}
+	
+</style>
+
+
+</head>
+<body>
+
+
+		<script type="text/javascript">
+			
+var count = 0;
+ 
+document.addEventListener("click", function(){
+	count=count+1;
+	console.log(count)
+if(count%2 == 1) {
+
+document.addEventListener("mousemove",
+
+		function box(input){
+		var Draw = document.createElement("div")
+		document.body.appendChild(Draw);
+		Draw.classList.add("Draw");
+		Draw.style.left = input.clientX -50+ "px";
+		Draw.style.top = input.clientY -50+ "px";
+		console.log(input);})
+
+if(count%2 == 0) {
+
+	document.removeEventListener("mousemove", box)
+
+}
+
+} 
+
+
+
+
+})
+
+</script>
+</body>
+</html>

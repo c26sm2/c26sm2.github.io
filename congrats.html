@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title></title>
+
+<style type="text/css">
+	
+	#box{
+		width: 300px;
+		height: 300px;
+		background-image: url("seniors.jpg");
+		position: absolute;
+		background-position: center;
+		background-size:contain;
+		background-repeat: no-repeat;
+	/*	top: 42%;
+		left: 46%;
+*/
+	}
+
+	body{
+		background-size: cover;
+		background-color: lightpink;
+
+}
+
+.hat{
+    color: deeppink;
+    font-size: xx-large;
+}
+
+</style>
+
+</head>
+<body>
+
+<a href="projects.html">
+
+<p class = "hat">
+ 🎉
+
+<br> 
+
+<div id = "box"></div>
+
+<audio src="song.mp3" id=song></audio>
+
+<script type="text/javascript">
+	
+let counter = 0;
+
+document.addEventListener("click",
+		function(){
+			counter = counter +1;
+		console.log(counter)
+		console.log(event.clientX, event.clientY)
+				box.style.left = event.clientX -50 + "px";
+				box.style.top = event.clientY -50 + "px"; 
+			
+			if(counter%2 == 1){
+				document.body.style.
+					backgroundColor = "hotpink"
+					document.body.style.backgroundImage = "url(https://i.pinimg.com/736x/6c/0a/d4/6c0ad440f325c1488c9f669ca846c383.jpg)"
+					song.play()}
+
+			if(counter%2 == 0){
+				document.body.style.
+					backgroundColor = "lightpink";
+					document.body.style.backgroundImage = "url()"
+					song.pause()}
+
+
+		}
+	)
+
+
+</script>
+
+
+</body>
+</html>
