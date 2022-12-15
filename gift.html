@@ -38,19 +38,26 @@
 
 <p class = "sun">
  ☀️
-
+</p>
+</a>
+<p>
+	Bye!
+</p>
 <br> 
 
 <div id = "plane"></div>
 
-<audio src="nightsong.mp3" id=nightsong></audio>
+<audio id=song></audio>
 
 <script type="text/javascript">
 	
 let counter = 0;
 
+var allSongs = ["nightsong.mp3", "cartier.mp3", "worried.mp3", "name.mp3", "candyPaint.mp3", "darkRed.mp3", "hellnback.mp3", "night.mp3", "novacane.mp3", "brain.mp3", "happier.mp3", "location.mp3", "lost.mp3", "loveLost.mp3", "mama.mp3", "mercury.mp3", "moneyTrees.mp3", "nice.mp3", "softcore.mp3", "starboy.mp3", "theThrill.mp3", "thinkin.mp3"]
+
 document.addEventListener("click",
 		function(){
+			var random = Math.round(Math.random()*22)
 			counter = counter +1;
 		console.log(counter)
 		console.log(event.clientX, event.clientY)
@@ -58,16 +65,19 @@ document.addEventListener("click",
 				plane.style.top = event.clientY -50 + "px"; 
 			
 			if(counter%2 == 1){
-				document.body.style.
-					backgroundColor = "hotpink"
+				document.body.style.					backgroundColor = "white"
 					document.body.style.backgroundImage = "url(https://s3.amazonaws.com/uploads.opalcollection.com/app/uploads/2022/02/10163909/jupbeach-mini.png)"
-					nightsong.play()}
+					song.src="./giftSongs/"+ allSongs[random]
+					song.play()
+
+
+				}
 
 			if(counter%2 == 0){
 				document.body.style.
 					backgroundColor = "lightpink";
 					document.body.style.backgroundImage = "url(http://cdn.viewing.nyc/assets/media/d02346823127fb129c6fb3634e6c7841/elements/50d97220b6dd5a44af4031076fcf5f47/74ddb8d2-e0a2-47cd-9f51-6f2e91598cec.jpg)"
-					nightsong.pause()}
+					song.pause()}
 
 
 		}
