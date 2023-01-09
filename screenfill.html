@@ -7,10 +7,14 @@
 
 
 <style type="text/css">
+
+	body{
+background-color: lightpink;
+}
 	.Draw{
 		height: 100px;
 		width:	100px;
-		background-image: url(https://www.pngmagic.com/product_images/pink-background-solid.jpg);
+		background-image: url(https://i.pinimg.com/originals/9f/38/91/9f3891b61dc699dc05ed1eef5719de28.png);
 		background-size: contain;
 		background-repeat: no-repeat;
 		position: absolute;
@@ -23,37 +27,43 @@
 </head>
 <body>
 
+<a href="projects.html">
 
+click here to go back and see other projects
+
+</p>
+</a>
+
+<p>
+Click around the screen and move your mouse to draw. To stop drawing, click again and keep doing that to make a drawing! 
+</p>
 		<script type="text/javascript">
 			
 var count = 0;
+
+function box(input){
+		var Draw = document.createElement("div")
+		document.body.appendChild(Draw);
+		Draw.classList.add("Draw");
+		Draw.style.left = input.clientX -50+ "px";
+		Draw.style.top = input.clientY -50+ "px";
+		console.log(input);}
  
 document.addEventListener("click", function(){
 	count=count+1;
 	console.log(count)
 if(count%2 == 1) {
 
-document.addEventListener("mousemove",
+document.addEventListener("mousemove", box);
+}
 
-		function box(input){
-		var Draw = document.createElement("div")
-		document.body.appendChild(Draw);
-		Draw.classList.add("Draw");
-		Draw.style.left = input.clientX -50+ "px";
-		Draw.style.top = input.clientY -50+ "px";
-		console.log(input);})
+		
 
 if(count%2 == 0) {
 
 	document.removeEventListener("mousemove", box)
 
 }
-
-
-} 
-
-
-
 
 })
 
