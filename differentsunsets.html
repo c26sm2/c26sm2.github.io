@@ -41,20 +41,23 @@ click here to go back and see other projects
 
 </a>
 
-<h1> Happy birthday! I love you Cesca💕 <h1>
+<h1> These are some pictures of the sunset I took! <h1>
 
 
-<p> Hover over the images for some cute memories:
+<p> Hover over the image, and it will show a sunset in NYC.
 
 
 <script type="text/javascript">
 
-    
+    var images = ["d", "x" "d", "sd"]
+    var=number(4);
     function makeSquare (x) {
 
             var square = document.createElement('div');
                         document.body.appendChild(square);
                         square.classList.add("polygon")
+                                        square.style.backgroundImage = images[4];
+
             square.id = "square" + x;
 
             square.addEventListener("mouseenter", function(){
@@ -62,7 +65,6 @@ click here to go back and see other projects
             })
 
             square.addEventListener("mouseleave", function(){
-                square.style.backgroundColor = "deeppink";
             square.style.backgroundImage = "url()"
 
 
@@ -71,7 +73,8 @@ click here to go back and see other projects
 
         };
 
-    for (var i = 0; i < 15; i= i+1) 
+
+    for (var i = 0; i < 120; i= i+1) 
     { makeSquare(i);}
 </script>
 </body>
