@@ -1,0 +1,294 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+<style type="text/css">
+
+body{
+	background-color: pink;
+}
+	.letters{
+		width:70px;
+		height:70px;
+		display:inline-block;
+		background-size: contain;
+		position:relative;
+		opacity: 0;
+		background-repeat: no-repeat;
+
+	}
+
+	.hearts{
+		background-image: url(heartone.png);
+		width:70px;
+		height:69px;
+		display:inline-block;
+		background-size: contain;
+		position: absolute;
+		opacity: 0;
+		background-repeat: no-repeat;
+		
+
+	}
+
+	#box{
+		background-image: url(box.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		position: absolute;
+		width: 500px;
+		height: 500px;
+		top: 150px;
+		left: 450px;
+		z-index: 10;
+	}
+
+	#h{
+		background-image: url(h.png);
+		
+	}
+
+	#a{
+		background-image: url(a.png);
+	}
+
+	#p{
+		background-image: url(p.png);
+	}
+
+	#p2{
+		background-image: url(p.png);
+	}
+
+	#y{
+		background-image: url(y.png);
+	}
+
+	#v{
+		background-image: url(v.png);
+	}
+
+	#a2{
+		background-image: url(a.png);
+	}
+
+	#l{
+		background-image: url(l.png);
+	}
+
+	#e{
+		background-image: url(e.png);
+	}
+
+	#n{
+		background-image: url(n.png);
+	}
+
+	#t{
+		background-image: url(t.png);
+	}
+
+	#i{
+		background-image: url(i.png);
+	}
+
+	#n2{
+		background-image: url(n.png);
+	}
+
+	#e2{
+		background-image: url(e.png);
+	}
+
+	#s{
+		background-image: url(s.png);
+	}
+	
+	#d{
+		background-image: url(d.png);
+	}
+
+	#a3{
+		background-image: url(a.png);
+	}
+
+	#y2{
+		background-image: url(y.png);
+	}
+
+	#heartone{
+		background-image: url(heartone.png);
+
+	}
+
+	div{
+		background-size:contain;
+	}
+
+
+
+</style>
+</head>
+<body>
+
+	<div id="box"></div>
+	<div class="letters" id="h"></div>
+	<div class="letters" id="a"></div>
+	<div class="letters" id="p"></div>
+	<div class="letters" id="p2"></div>
+	<div class="letters" id="y"></div>
+	<div class="letters" id="v"></div>
+	<div class="letters" id="a2"></div>
+	<div class="letters" id="l"></div>
+	<div class="letters" id="e"></div>
+	<div class="letters" id="n"></div>
+	<div class="letters" id="t"></div>
+	<div class="letters" id="i"></div>
+	<div class="letters" id="n2"></div>
+	<div class="letters" id="e2"></div>
+	<div class="letters" id="s"></div>
+	<div class="letters" id="d"></div>
+	<div class="letters" id="a3"></div>
+	<div class="letters" id="y2"></div>
+	<div class="hearts" id="heartone"></div>
+
+
+<script type="text/javascript">
+	
+	var box = document.getElementById('box');
+
+	var h = document.getElementById('h');
+
+	var a = document.getElementById('a');
+
+	var p = document.getElementById('p');
+
+	var p2 = document.getElementById('p2');
+
+	var y = document.getElementById('y');
+
+	var v = document.getElementById('v');
+
+	var a2 = document.getElementById('a2');
+
+	var l = document.getElementById('l');
+
+	var e = document.getElementById('e');
+
+	var n = document.getElementById('n');
+
+	var t = document.getElementById('t');
+
+	var i = document.getElementById('i');
+
+	var n2 = document.getElementById('n2');
+
+	var e2 = document.getElementById('e2');
+
+	var s = document.getElementById('s');
+
+	var d = document.getElementById('d');
+	
+	var a3 = document.getElementById('a3');
+
+	var y2 = document.getElementById('y2');
+
+	var heartone = document.getElementById('heartone');
+
+	var counter = 0;
+
+	box.addEventListener("click", function(){
+		
+console.log(event.clientX,event.clientY);
+
+		counter = counter + 1;
+
+heartone.style.left = event.clientX - 300 + "px";
+heartone.style.top = event.clientY - 300 + "px";
+heartone.style.right = event.clientY - 300 + "px";
+heartone.style.bottom = event.clientY - 300 + "px";
+
+
+if (counter == 1){
+			h.style.opacity = "1";
+		}
+
+		if (counter == 2){
+			a.style.opacity = "2";
+		}
+
+		if (counter == 3){
+			p.style.opacity = "3";
+		}
+
+		if (counter == 4){
+			p2.style.opacity = "4";
+		}
+
+		if (counter == 5){
+			y.style.opacity = "5";
+		}
+
+		if (counter == 6){
+			v.style.opacity = "6";
+		}
+
+		if (counter == 7){
+			a2.style.opacity = "7";
+		}
+
+		if (counter == 8){
+			l.style.opacity = "8";
+		}
+
+		if (counter == 9){
+			e.style.opacity = "9";
+		}
+
+		if (counter == 10){
+			n.style.opacity = "10";
+		}
+
+		if (counter == 11){
+			t.style.opacity = "11";
+		}
+
+		if (counter == 12){
+			i.style.opacity = "12";
+		}
+
+		if (counter == 13){
+			n2.style.opacity = "13";
+		}
+
+		if (counter == 14){
+			e2.style.opacity = "14";
+		}
+
+		if (counter == 15){
+			s.style.opacity = "15";
+		}
+
+		if (counter == 16){
+			d.style.opacity = "16";
+		}
+
+		if (counter == 17){
+			a3.style.opacity = "17";
+		}
+
+		if (counter == 18){
+			y2.style.opacity = "18";
+		}
+
+		if (counter == 19){
+			heartone.style.opacity = "19";
+		}
+	})
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style>
+
+		#car{
+			width:100px;
+			height:100px;
+			background-color:blue;
+			left:10px;
+			top: 300px;
+			position:absolute;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="car"></div>
+
+	<script type="text/javascript">
+		car.style.left = "0px";
+
+		 var x = parseInt(car.style.left);
+
+		document.addEventListener("keydown", function(event){
+			console.log(x)
+			x = x+10;
+
+			car.style.left = x +"px";
+
+		})
+
+
+	</script>
+
+</body>
+</html>

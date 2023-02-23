@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>colors</title>
+
+    <a href="projects.html">
+
+click here to go back and see other projects
+</a>
+     <style>
+
+body{
+background-color: lightpink;
+}
+        h1 {
+          text-align: center;
+          font-family: georgia;
+          color: deeppink;
+        }
+    </style>
+    <script>
+      document.addEventListener("click", function() {
+        var color = getRandomColor();
+        document.body.style.background = color;
+      });
+     
+      function getRandomColor() {
+        var letters = "0123456789ABCDEF";
+        var color = "#";
+        for (var i = 0; i < 6; i++) {
+          color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+      }
+    </script>
+  </head>
+  <body>
+    <h1>click the screen to find the color of your aura<h1>
+  </body>
+</html>

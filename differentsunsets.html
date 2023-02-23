@@ -49,23 +49,22 @@ click here to go back and see other projects
 
 <script type="text/javascript">
 
-    var images = ["d", "x" "d", "sd"]
-    var=number(4);
     function makeSquare (x) {
 
             var square = document.createElement('div');
                         document.body.appendChild(square);
                         square.classList.add("polygon")
-                                        square.style.backgroundImage = images[4];
 
             square.id = "square" + x;
+            square.style.backgroundImage = "url(pic"+x+".png)"
 
             square.addEventListener("mouseenter", function(){
-                square.style.backgroundImage = "url("+x+".png)"
+                square.style.backgroundImage = "url(nyc"+x+".png)"
             })
 
             square.addEventListener("mouseleave", function(){
-            square.style.backgroundImage = "url()"
+            square.style.backgroundImage = square.style.backgroundImage = "url(pic"+x+".png)"
+
 
 
             })
@@ -74,7 +73,7 @@ click here to go back and see other projects
         };
 
 
-    for (var i = 0; i < 120; i= i+1) 
+    for (var i = 0; i < 30; i= i+1) 
     { makeSquare(i);}
 </script>
 </body>
