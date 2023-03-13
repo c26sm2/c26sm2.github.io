@@ -7,12 +7,17 @@
 	<style>
 
 		#car{
-			width:100px;
-			height:100px;
-			background-color:blue;
+			width:200px;
+			height:200px;
 			left:10px;
-			top: 300px;
+			top: 10px;
 			position:absolute;
+			background-image: url('jeep.png');
+			background-size: contain;
+			background-position: center;
+			background-repeat: no-repeat;
+
+
 		}
 	</style>
 </head>
@@ -28,6 +33,14 @@
 		document.addEventListener("keydown", function(event){
 			console.log(x)
 			x = x+10;
+
+if (event.keyCode == 39){
+	x = x+10;
+}
+
+else if (event.keyCode == 37){
+
+}
 
 			car.style.left = x +"px";
 
