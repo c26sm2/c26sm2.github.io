@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+
+
+	<title></title>
+
+<style type="text/css">
+	
+body{
+background-color: lightpink;
+}
+		
+	#circle{
+		width:100px;
+		height: 100px;
+		background-repeat: no-repeat;
+		background-size: contain;
+		position: absolute;
+		transition: .5s;
+		background-image: url(https://64.media.tumblr.com/c962c11dbfb60648e70666e2b725d786/tumblr_n1xolvMKbc1rat0tqo1_500.gif);
+
+		}
+
+		body{
+			cursor:default
+		}
+
+	</style>
+
+</head>
+<body>
+
+<a href="projects.html">
+
+click here to go back and see other projects
+
+	<div id="circle"></div>
+		<script type="text/javascript">
+			document.addEventListener("mousemove", function (event){
+			console.log(event.clientX, event.clientY);
+			circle.style.left = event.clientX -0 + "px";
+			circle.style.top = event.clientY -0 + "px"; 
+		})
+
+	</script>
+
+</body>
+</html>
+

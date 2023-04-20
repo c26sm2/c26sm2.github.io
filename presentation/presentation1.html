@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/white.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background-gradient="linear-gradient(to bottom, #ff69b4, #f5ced2)">
+			<h2 style="color:white;">My fave songs of the week(4/10/23)</h2> 
+
+
+			</section>
+
+				<section data-auto-animate id = "currentsong1">
+				<h3 style ="color:deepskyblue;"> Swim Good </h3>
+
+					<center>
+						<img id="image1"src="swimgood.png" style="width:500px; height:300px;">
+					</center>
+					<audio id="song1" src="swimgood.mp3"></audio>
+					<p style="font-size: xx-large; font-family:impact; color: deepskyblue;" >Frank Ocean </p>
+					
+			<script>
+				let counter = 0;
+	image1.addEventListener("click", function(){
+		counter= counter+1;
+				if(counter%2 == 1){
+					song1.play()
+					}
+					
+				if(counter%2 == 0){
+					song1.pause()
+					 }})
+			</script>
+					</section>
+				
+		<section data-auto-animate id = "currentsong2">
+					<center> 
+						<h3 style ="color:black;"> Fashion Killa</h3>
+
+						<img id="image2" src="longliveasap.png" style="width:300px; height:300px;">
+					</center>
+					<audio id="song2" src="fashionkilla.mp3"></audio>
+<p style="font-size: xx-large; font-family:impact; color: black;" >ASAP Rocky</p>
+			<script>
+				 counter = 0;
+	image2.addEventListener("click", function(){
+		counter= counter+1;
+				if(counter%2 == 1){
+					song2.play()
+					}
+					
+				if(counter%2 == 0){
+					song2.pause()
+					 }})
+				</script>
+
+
+			</section >
+
+			<section data-auto-animate id = "currentsong3">
+				<center>
+				<h3 style ="color:darkseagreen;">	Bonfire</h3>
+
+					
+						<img id="image3" src="camp.png" style="width:325px; height:325px;">
+					</center>
+					<audio id="song3" src="bonfire.mp3"></audio>
+<p style="font-size: xx-large; font-family:impact; color: darkseagreen;" >Childish Gambino </p>
+<script>
+				 counter = 0;
+	image3.addEventListener("click", function(){
+		counter= counter+1;
+				if(counter%2 == 1){
+					song3.play()
+					}
+					
+				if(counter%2 == 0){
+					song3.pause()
+					 }})
+				</script>
+
+			</section>
+
+			<section data-auto-animate id = "currentsong4">
+				<center>
+				<h3 style ="color:lightpink;">Come Back to Earth </h3>
+
+						<img id ="image4" src="swimming.png" style="width:320px; height:400px;">
+					</center>
+					<audio id = "song4" src="swimming.mp3"></audio>
+			<p style="font-size: xx-large; font-family:impact; color: lightpink;" >Mac Miller </p>
+
+			<script>
+				 counter = 0;
+	image4.addEventListener("click", function(){
+		counter= counter+1;
+				if(counter%2 == 1){
+					song4.play()
+					}
+					
+				if(counter%2 == 0){
+					song4.pause()
+					 }})
+				</script>
+			</section>
+
+			<section data-auto-animate id = "currentsong5">
+				<center>	<h3 style ="color:darkred;">Novacane </h3>
+
+					
+						<img id="image5" src="novacane.png" style="width:325px; height:325px;">
+					</center>
+					<audio id="song5" src="novacane2.mp3" ></audio>
+		<p style="font-size: xx-large; font-family:impact; color: darkred;" >Frank Ocean </p>
+
+			<script>
+				 counter = 0;
+	image5.addEventListener("click", function(){
+		counter= counter+1;
+				if(counter%2 == 1){
+					song5.play()
+					}
+					
+				if(counter%2 == 0){
+					song5.pause()
+					 }})
+				</script>
+			</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
